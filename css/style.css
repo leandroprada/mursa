@@ -471,8 +471,8 @@ h1, h2, h3, h4, h5,
   padding: 1rem; }
   @media (max-width: 991.98px) {
     .site-navbar {
-      padding-top: 3rem;
-      padding-bottom: 3rem; } }
+      padding-top: 1rem;
+      padding-bottom: none; } }
   .site-navbar .toggle-button {
     position: absolute;
     right: 0px; }
@@ -482,10 +482,29 @@ h1, h2, h3, h4, h5,
     font-size: 2.7rem; }
     .site-navbar .site-logo a {
       color: #fff; }
+	.site-logo-bg{
+	  display: block;
+	  height: 75px;	  
+	}		
+	.site-logo-xs{
+	  display: none;	
+	}		
     @media (max-width: 991.98px) {
       .site-navbar .site-logo {
-        float: left;
-        position: relative; } }
+		float: right;
+        position: relative; }
+		.site-logo-bg{
+		display: none;	
+		}		
+		.site-logo-xs{
+		  display: block;
+		  width: 100%;
+		  padding: none;
+		}	
+
+
+
+		}
   .site-navbar .site-navigation.border-bottom {
     border-bottom: 1px solid white !important; }
   .site-navbar .site-navigation .site-menu {
@@ -599,6 +618,8 @@ h1, h2, h3, h4, h5,
           margin-top: 0px;
           visibility: visible;
           opacity: 1; }
+    
+
 
 .site-mobile-menu {
   width: 300px;
@@ -1663,11 +1684,15 @@ h1, h2, h3, h4, h5,
 .top-social a {
   display: inline-block;
   padding: 20px; }
+  @media (max-width: 768px) {
+    .top-social a {
+      padding: 10px;
+	  } }
 
 .menu-wrap {
   padding: 10px 20px;
   background: #fff; }
-
+   
 .subtitle {
   font-size: 13px;
   text-transform: uppercase;
